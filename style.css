@@ -1,0 +1,20 @@
+.header{
+    background-color:aqua;
+}
+h1{
+    text-align: center;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(244, 228, 228);
+}
+
+.map-container {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 100vh; /* Altura del viewport completo */
+}
