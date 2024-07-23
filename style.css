@@ -1,20 +1,91 @@
-.header{
-    background-color:aqua;
+header {
+    display: grid; /* Utiliza display grid para organizar los elementos dentro del header */
+    place-items: center; /* Centra los elementos dentro del header tanto horizontal como verticalmente */
+    background-color: aqua; /* Establece el color de fondo del header como aqua */
 }
-h1{
-    text-align: center;
+
+body, html {
+    height: 100%; /* Establece la altura del body y html al 100% del viewport */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    font-family: Arial, sans-serif; /* Define la fuente para todo el documento como Arial o una fuente sans-serif genérica */
 }
-a{
-    font-size: 20px;
-    text-decoration: none;
+
+h1, h2 {
+    text-align: center; /* Centra horizontalmente los textos de los encabezados h1 y h2 */
 }
-a:hover{
-    color: rgb(244, 228, 228);
+
+a {
+    font-size: 20px; /* Establece el tamaño de fuente para todos los enlaces a 20px */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    color: black; /* Establece el color de texto de los enlaces como negro */
+}
+
+a:hover {
+    color: violet; /* Cambia el color de texto a violeta cuando el cursor se sitúa sobre los enlaces */
+}
+
+.container {
+    display: flex; /* Utiliza display flex para crear un contenedor flexible */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    min-height: 100vh; /* Establece la altura mínima del contenedor al 100% del viewport */
+    background-color: #f0f0f0; /* Establece el color de fondo del contenedor como #f0f0f0 */
+}
+
+.form-contact {
+    width: 100%; /* Establece el ancho del formulario al 100% del contenedor padre */
+    max-width: 50%; /* Establece el ancho máximo del formulario al 50% del contenedor padre */
+    padding: 10px; /* Añade relleno interno de 10px al formulario */
+    background-color: #53e3de; /* Establece el color de fondo del formulario como #53e3de */
+    border: 1px solid #ddd; /* Añade un borde de 1px sólido con color #ddd alrededor del formulario */
+    border-radius: 8px; /* Aplica un radio de borde de 8px para redondear las esquinas del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera alrededor del formulario */
+}
+
+.formulario {
+    margin-top: 20px; /* Añade margen superior de 20px al elemento con clase 'formulario' */
+    text-align: center; /* Centra horizontalmente el texto dentro del elemento con clase 'formulario' */
+}
+
+.input-field {
+    width: 100%; /* Establece el ancho del campo de entrada al 100% del contenedor padre */
+    padding: 10px; /* Añade relleno interno de 10px al campo de entrada */
+    margin-bottom: 10px; /* Añade margen inferior de 10px al campo de entrada */
+    border: 1px solid #ccc; /* Añade un borde de 1px sólido con color #ccc alrededor del campo de entrada */
+    border-radius: 4px; /* Aplica un radio de borde de 4px para redondear las esquinas del campo de entrada */
+    box-sizing: border-box; /* Incluye el borde y el relleno en el ancho total del campo de entrada */
+}
+
+.btn {
+    display: block; /* Establece el botón como elemento de bloque */
+    width: 100%; /* Establece el ancho del botón al 100% del contenedor padre */
+    padding: 10px; /* Añade relleno interno de 10px al botón */
+    background-color: #4c9eaf; /* Establece el color de fondo del botón como #4c9eaf */
+    color: white; /* Establece el color de texto del botón como blanco */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 4px; /* Aplica un radio de borde de 4px para redondear las esquinas del botón */
+    cursor: pointer; /* Cambia el cursor al puntero cuando se pasa sobre el botón */
+}
+
+.btn:hover {
+    background-color: #ffffff; /* Cambia el color de fondo a blanco cuando se pasa el cursor sobre el botón */
+    color: black; /* Cambia el color de texto a negro cuando se pasa el cursor sobre el botón */
 }
 
 .map-container {
-    display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    height: 100vh; /* Altura del viewport completo */
+    display: flex; /* Utiliza display flex para crear un contenedor flexible */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    min-height: 50vh; /* Establece la altura mínima del contenedor al 50% del viewport */
+    background-color: #f0f0f0; /* Establece el color de fondo del contenedor como #f0f0f0 */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas pequeñas */
+    }
+    
+    .form-contact {
+        max-width: 90%; /* Establece el ancho máximo del formulario al 90% del contenedor padre en pantallas pequeñas */
+    }
 }

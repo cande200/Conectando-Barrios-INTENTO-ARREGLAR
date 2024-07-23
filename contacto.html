@@ -5,41 +5,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facilitaciones Inmuebles</title>
-    <link rel="stylesheet" href="style.css">
-
-    <!--Box icons link-->
-
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <!--Google Fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Tektur&family=Work+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,200;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
     <!--Header-->
     <header>
-        <form action="https://formsubmit.co/facilitacionesinmuebles@gmail.com" method="POST" class="form-contact"
-        autocomplete="off" data-aos="zoom-in-up">
+        
+            <nav>
+                <a class="contacto" href="/index.html">|Inicio|</a>
+                <a class="quienessomos" href="/quienes-somos.html">|¿Quiénes Somos?| </a>
+               
+            </nav>
+        
+        <form action="https://formsubmit.co/contactodesigualdadsocial@gmail.com" method="POST" class="form-contact"
+        autocomplete="off">
         <h2>Contacto</h2>
 
 
 
-        <div class="input-group" data-aos="zoom-in-up">
+        <div class="formulario">
 
             <input type="text" name="name" placeholder="Nombre y Apellido">
 
             <input type="tel" name="phone" placeholder="Teléfono">
 
             <input type="email" name="email" placeholder="Correo electrónico">
-
-            <input type="text" name="Propiedad" placeholder="Propiedad interesada">
 
             <textarea name="message" cols="30" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
 
@@ -48,40 +40,9 @@
         </div>
     </header>
     
-    
-        <script>
-             const form = document.querySelector('.form-contact');
-    form.addEventListener('submit', (e) => {
-        const name = form.querySelector('input[name="name"]').value.trim();
-        const phone = form.querySelector('input[name="phone"]').value.trim();
-        const email = form.querySelector('input[name="email"]').value.trim();
-        const property = form.querySelector('input[name="Propiedad"]').value.trim();
-        const message = form.querySelector('textarea[name="message"]').value.trim();
-
-        if (!name || !phone || !email || !property || !message) {
-            e.preventDefault(); // Prevent form submission
-            alert("Por favor, complete todos los campos antes de enviar el formulario.");
-        }
-    });
-        </script>
-
-    </form>
-
-
-
-
-
-    <!--Contact-->
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-            offset: 50,
-            duration: 1200
-        });
-    </script>
 
     <script src="script.js"></script>
+    </form>
 </body>
 
 
